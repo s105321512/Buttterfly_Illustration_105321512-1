@@ -8,26 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		62011FB3208C730E005403D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62011FB2208C730E005403D2 /* AppDelegate.swift */; };
-		62011FB5208C730E005403D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62011FB4208C730E005403D2 /* ViewController.swift */; };
+		62011FB5208C730E005403D2 /* Menu_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62011FB4208C730E005403D2 /* Menu_ViewController.swift */; };
 		62011FB8208C730E005403D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62011FB6208C730E005403D2 /* Main.storyboard */; };
 		62011FBA208C730E005403D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62011FB9208C730E005403D2 /* Assets.xcassets */; };
 		62011FBD208C730E005403D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62011FBB208C730E005403D2 /* LaunchScreen.storyboard */; };
 		62109C3E208DD6DE001380C8 /* List_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62109C3D208DD6DE001380C8 /* List_TableViewCell.swift */; };
-		62109C40209074AA001380C8 /* butterfly_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62109C3F209074AA001380C8 /* butterfly_ViewController.swift */; };
+		62109C40209074AA001380C8 /* butterfly_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62109C3F209074AA001380C8 /* butterfly_DetailViewController.swift */; };
+		6232BE1E20BD58A00053F959 /* Butterfly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232BE1D20BD58A00053F959 /* Butterfly.swift */; };
+		6232BE2820BE796E0053F959 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6232BE2620BE796E0053F959 /* IndieFlower.ttf */; };
+		6232BE2920BE796E0053F959 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6232BE2720BE796E0053F959 /* OFL.txt */; };
+		6232BE2B20BE87960053F959 /* ButterflyDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232BE2A20BE87960053F959 /* ButterflyDetailHeaderView.swift */; };
+		6232BE2D20BE8EFA0053F959 /* ButterflyDetaillconTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232BE2C20BE8EFA0053F959 /* ButterflyDetaillconTextCell.swift */; };
+		6232BE2F20BE929F0053F959 /* ButterflyDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6232BE2E20BE929F0053F959 /* ButterflyDetailTextCell.swift */; };
 		6294D6EC208DC7A1002A2564 /* List_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294D6EB208DC7A1002A2564 /* List_TableViewController.swift */; };
+		62E38B2020BFBFDF0008D426 /* NotoSerifCJKtc-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1720BFBFD60008D426 /* NotoSerifCJKtc-Light.otf */; };
+		62E38B2120BFBFDF0008D426 /* NotoSerifCJKtc-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1820BFBFD70008D426 /* NotoSerifCJKtc-Regular.otf */; };
+		62E38B2220BFBFDF0008D426 /* NotoSerifCJKtc-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1920BFBFD90008D426 /* NotoSerifCJKtc-Bold.otf */; };
+		62E38B2320BFBFDF0008D426 /* NotoSerifCJKtc-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1A20BFBFDA0008D426 /* NotoSerifCJKtc-ExtraLight.otf */; };
+		62E38B2420BFBFDF0008D426 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1B20BFBFDB0008D426 /* README */; };
+		62E38B2520BFBFDF0008D426 /* LICENSE_OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1C20BFBFDB0008D426 /* LICENSE_OFL.txt */; };
+		62E38B2620BFBFDF0008D426 /* NotoSerifCJKtc-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1D20BFBFDC0008D426 /* NotoSerifCJKtc-Medium.otf */; };
+		62E38B2720BFBFDF0008D426 /* NotoSerifCJKtc-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1E20BFBFDD0008D426 /* NotoSerifCJKtc-SemiBold.otf */; };
+		62E38B2820BFBFDF0008D426 /* NotoSerifCJKtc-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62E38B1F20BFBFDE0008D426 /* NotoSerifCJKtc-Black.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62011FAF208C730E005403D2 /* Buttterfly_Illustration_105321512.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buttterfly_Illustration_105321512.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62011FB2208C730E005403D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62011FB4208C730E005403D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62011FB4208C730E005403D2 /* Menu_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_ViewController.swift; sourceTree = "<group>"; };
 		62011FB7208C730E005403D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62011FB9208C730E005403D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62011FBC208C730E005403D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62011FBE208C730E005403D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62109C3D208DD6DE001380C8 /* List_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_TableViewCell.swift; sourceTree = "<group>"; };
-		62109C3F209074AA001380C8 /* butterfly_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterfly_ViewController.swift; sourceTree = "<group>"; };
+		62109C3F209074AA001380C8 /* butterfly_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterfly_DetailViewController.swift; sourceTree = "<group>"; };
+		6232BE1D20BD58A00053F959 /* Butterfly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterfly.swift; sourceTree = "<group>"; };
+		6232BE2620BE796E0053F959 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
+		6232BE2720BE796E0053F959 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		6232BE2A20BE87960053F959 /* ButterflyDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailHeaderView.swift; sourceTree = "<group>"; };
+		6232BE2C20BE8EFA0053F959 /* ButterflyDetaillconTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetaillconTextCell.swift; sourceTree = "<group>"; };
+		6232BE2E20BE929F0053F959 /* ButterflyDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyDetailTextCell.swift; sourceTree = "<group>"; };
 		6294D6EB208DC7A1002A2564 /* List_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_TableViewController.swift; sourceTree = "<group>"; };
+		62E38B1720BFBFD60008D426 /* NotoSerifCJKtc-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-Light.otf"; sourceTree = "<group>"; };
+		62E38B1820BFBFD70008D426 /* NotoSerifCJKtc-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-Regular.otf"; sourceTree = "<group>"; };
+		62E38B1920BFBFD90008D426 /* NotoSerifCJKtc-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-Bold.otf"; sourceTree = "<group>"; };
+		62E38B1A20BFBFDA0008D426 /* NotoSerifCJKtc-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-ExtraLight.otf"; sourceTree = "<group>"; };
+		62E38B1B20BFBFDB0008D426 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		62E38B1C20BFBFDB0008D426 /* LICENSE_OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_OFL.txt; sourceTree = "<group>"; };
+		62E38B1D20BFBFDC0008D426 /* NotoSerifCJKtc-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-Medium.otf"; sourceTree = "<group>"; };
+		62E38B1E20BFBFDD0008D426 /* NotoSerifCJKtc-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-SemiBold.otf"; sourceTree = "<group>"; };
+		62E38B1F20BFBFDE0008D426 /* NotoSerifCJKtc-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifCJKtc-Black.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +90,80 @@
 		62011FB1208C730E005403D2 /* Buttterfly_Illustration_105321512 */ = {
 			isa = PBXGroup;
 			children = (
-				62011FB2208C730E005403D2 /* AppDelegate.swift */,
-				62011FB4208C730E005403D2 /* ViewController.swift */,
-				62011FB6208C730E005403D2 /* Main.storyboard */,
+				6232BE2420BE79410053F959 /* Resources */,
+				6232BE2220BE76030053F959 /* Model */,
+				6232BE2120BE75FD0053F959 /* View */,
+				6232BE2020BE75F30053F959 /* StoryBoard */,
+				6232BE1F20BE75BC0053F959 /* Controller */,
 				62011FB9208C730E005403D2 /* Assets.xcassets */,
-				62011FBB208C730E005403D2 /* LaunchScreen.storyboard */,
 				62011FBE208C730E005403D2 /* Info.plist */,
-				6294D6EB208DC7A1002A2564 /* List_TableViewController.swift */,
-				62109C3D208DD6DE001380C8 /* List_TableViewCell.swift */,
-				62109C3F209074AA001380C8 /* butterfly_ViewController.swift */,
 			);
 			path = Buttterfly_Illustration_105321512;
+			sourceTree = "<group>";
+		};
+		6232BE1F20BE75BC0053F959 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6294D6EB208DC7A1002A2564 /* List_TableViewController.swift */,
+				62109C3F209074AA001380C8 /* butterfly_DetailViewController.swift */,
+				62011FB4208C730E005403D2 /* Menu_ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6232BE2020BE75F30053F959 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				62011FB6208C730E005403D2 /* Main.storyboard */,
+				62011FBB208C730E005403D2 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		6232BE2120BE75FD0053F959 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62109C3D208DD6DE001380C8 /* List_TableViewCell.swift */,
+				6232BE2A20BE87960053F959 /* ButterflyDetailHeaderView.swift */,
+				6232BE2C20BE8EFA0053F959 /* ButterflyDetaillconTextCell.swift */,
+				6232BE2E20BE929F0053F959 /* ButterflyDetailTextCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6232BE2220BE76030053F959 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6232BE1D20BD58A00053F959 /* Butterfly.swift */,
+				62011FB2208C730E005403D2 /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6232BE2420BE79410053F959 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6232BE2520BE794F0053F959 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6232BE2520BE794F0053F959 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				62E38B1C20BFBFDB0008D426 /* LICENSE_OFL.txt */,
+				62E38B1F20BFBFDE0008D426 /* NotoSerifCJKtc-Black.otf */,
+				62E38B1920BFBFD90008D426 /* NotoSerifCJKtc-Bold.otf */,
+				62E38B1A20BFBFDA0008D426 /* NotoSerifCJKtc-ExtraLight.otf */,
+				62E38B1720BFBFD60008D426 /* NotoSerifCJKtc-Light.otf */,
+				62E38B1D20BFBFDC0008D426 /* NotoSerifCJKtc-Medium.otf */,
+				62E38B1820BFBFD70008D426 /* NotoSerifCJKtc-Regular.otf */,
+				62E38B1E20BFBFDD0008D426 /* NotoSerifCJKtc-SemiBold.otf */,
+				62E38B1B20BFBFDB0008D426 /* README */,
+				6232BE2620BE796E0053F959 /* IndieFlower.ttf */,
+				6232BE2720BE796E0053F959 /* OFL.txt */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +225,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E38B2420BFBFDF0008D426 /* README in Resources */,
+				62E38B2820BFBFDF0008D426 /* NotoSerifCJKtc-Black.otf in Resources */,
+				62E38B2020BFBFDF0008D426 /* NotoSerifCJKtc-Light.otf in Resources */,
+				62E38B2620BFBFDF0008D426 /* NotoSerifCJKtc-Medium.otf in Resources */,
+				62E38B2520BFBFDF0008D426 /* LICENSE_OFL.txt in Resources */,
+				6232BE2920BE796E0053F959 /* OFL.txt in Resources */,
 				62011FBD208C730E005403D2 /* LaunchScreen.storyboard in Resources */,
 				62011FBA208C730E005403D2 /* Assets.xcassets in Resources */,
+				62E38B2220BFBFDF0008D426 /* NotoSerifCJKtc-Bold.otf in Resources */,
+				62E38B2120BFBFDF0008D426 /* NotoSerifCJKtc-Regular.otf in Resources */,
 				62011FB8208C730E005403D2 /* Main.storyboard in Resources */,
+				62E38B2720BFBFDF0008D426 /* NotoSerifCJKtc-SemiBold.otf in Resources */,
+				6232BE2820BE796E0053F959 /* IndieFlower.ttf in Resources */,
+				62E38B2320BFBFDF0008D426 /* NotoSerifCJKtc-ExtraLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +249,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62011FB5208C730E005403D2 /* ViewController.swift in Sources */,
+				62011FB5208C730E005403D2 /* Menu_ViewController.swift in Sources */,
+				6232BE2F20BE929F0053F959 /* ButterflyDetailTextCell.swift in Sources */,
 				62109C3E208DD6DE001380C8 /* List_TableViewCell.swift in Sources */,
 				62011FB3208C730E005403D2 /* AppDelegate.swift in Sources */,
-				62109C40209074AA001380C8 /* butterfly_ViewController.swift in Sources */,
+				6232BE2D20BE8EFA0053F959 /* ButterflyDetaillconTextCell.swift in Sources */,
+				6232BE1E20BD58A00053F959 /* Butterfly.swift in Sources */,
+				62109C40209074AA001380C8 /* butterfly_DetailViewController.swift in Sources */,
+				6232BE2B20BE87960053F959 /* ButterflyDetailHeaderView.swift in Sources */,
 				6294D6EC208DC7A1002A2564 /* List_TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
