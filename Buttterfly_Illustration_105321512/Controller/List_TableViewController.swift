@@ -12,12 +12,15 @@ import UIKit
 //var butterfly_name = [""]
 //var butterfly_image_name = [""]
 //var cientific_name = [""]
+//var Latitude = [Any?]()
+//var Longitude = [Any?]()
 
 var butterfly:[Butterfly] = [Butterfly(name: "", cientific: "", image: "", location: "", description: "", ecological: "")]
 
-class List_TableViewController: UITableViewController {
+
+class List_TableViewController: UITableViewController{
     
-    @IBOutlet weak var first_button: UIButton!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +63,7 @@ class List_TableViewController: UITableViewController {
         cell.thumbnailImageView.image = UIImage(named:butterfly[indexPath.row].image)
         return cell
     }
- 
+
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "showButterflyDetail"{
             if let indexPath = tableView.indexPathForSelectedRow{
@@ -71,6 +74,51 @@ class List_TableViewController: UITableViewController {
         }
     }
 
+//    func find_coordinate(name: String) -> String{
+//        var urlComponents: URLComponents = URLComponents(string: "https://www.tbn.org.tw")!
+//        urlComponents.path = "/api/v1/occurrence"
+//        urlComponents.queryItems = [URLQueryItem(name: "scientifiName", value: name)]
+//        let butterflyURL = urlComponents.url!
+//        print(butterflyURL)
+//        
+//        let config = URLSessionConfiguration.default
+//        var session: URLSession = URLSession(configuration: config, delegate: self, delegateQueue: nil)
+//        session.dataTask(with: butterflyURL, completionHandler: {(data, urlResponse, error) in
+//            if let data = data,
+//                let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]{
+//                if let count = json!["count"] as? Int   {
+//                    print("count=\(count)")
+//                }
+//                if let results = json!["results"] as? [AnyObject]{
+//                    for result in results{
+//                        if let latitude = result["decimalLatitude"]{
+//                            Latitude.append(latitude)
+//                            print("lat = \(latitude!)")
+//                        }
+//                        if let longitude = result["decimalLongitude"]{
+//                            Longitude.append(longitude)
+//                            print("lon = \(longitude!)")
+//                        }
+//                    }
+//                }
+//            }
+//        }).resume()
+//        return name
+//    }
+    
+    
+//    @IBAction func give_location (_ sender: UIButton){
+////        let key =
+////        print(key!)
+//
+//        var urlComponents: URLComponents = URLComponents(string: "https://www.tbn.org.tw")!
+//        urlComponents.path = "/api/v1/occurrence"
+//        urlComponents.queryItem = [URLQueryItem(name: "scientificName", value: key!),
+//                                   URLQueryItem(name:"eventPlaceAdminarea", value:"南投縣")]
+//        let TBN_URL = urlComponents.url!
+//        print(TBN_URL)
+//    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

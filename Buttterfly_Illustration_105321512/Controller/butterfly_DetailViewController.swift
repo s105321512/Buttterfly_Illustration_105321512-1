@@ -8,14 +8,18 @@
 
 import UIKit
 
-class butterfly_DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+var Latitude = [Any?]()
+var Longitude = [Any?]()
+var Coordinates = Int()
+
+class butterfly_DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, URLSessionDataDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        return 5;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,6 +38,18 @@ class butterfly_DetailViewController: UIViewController, UITableViewDataSource, U
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:ButterflyDetailTextCell.self), for: indexPath) as! ButterflyDetailTextCell
             cell.descriptionLabel.text = butterfly.description
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ButterflyDetailSeparatorCell.self), for: indexPath) as! ButterflyDetailSeparatorCell
+            cell.titleLabel.text = " How To Get Here"
+            return cell
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ButterflyDetailMapCell.self), for: indexPath) as! ButterflyDetailMapCell
+            if Coordinates == 0{
+                print ("--------no data--------")
+            }else{
+                cell.configure(Lat: [Latitude], Lon: [Longitude], Coordinates: Coordinates)
+            }
             return cell
         default:
             fatalError("Failed to instantiate the table view cell")
@@ -61,7 +77,51 @@ class butterfly_DetailViewController: UIViewController, UITableViewDataSource, U
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender senfer: Any?) {
+        let butterflyname = butterfly.name
+        find_coordinate(name: butterflyname)
+        if segue.identifier == "showMap" {
+            let destinaationController = segue.destination as! MapViewController
+            destinaationController.butterfly = butterfly
+        }
+    }
+    
+        func find_coordinate(name: String){
+            var urlComponents: URLComponents = URLComponents(string: "https://www.tbn.org.tw")!
+            urlComponents.path = "/api/v1/occurrence"
+            urlComponents.queryItems = [URLQueryItem(name: "scientifiName", value: name)]
+            let butterflyURL = urlComponents.url!
+            print(butterflyURL)
+    
+            let config = URLSessionConfiguration.default
+            let session: URLSession = URLSession(configuration: config, delegate: self, delegateQueue: nil)
+            session.dataTask(with: butterflyURL, completionHandler: {(data, urlResponse, error) in
+                if let data = data,
+                    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]{
+                    if let count = json!["count"] as? Int   {
+                        print("count=\(count)")
+                    }
+                    if let results = json!["results"] as? [AnyObject]{
+                        for result in results{
+                            if let latitude = result["decimalLatitude"]{
+                                Latitude.append(latitude)
+                                print("lat = \(latitude!)")
+                            }
+                            if let longitude = result["decimalLongitude"]{
+                                Longitude.append(longitude)
+                                print("lon = \(longitude!)")
+                            }
+                        }
+                    }
+                }
+            }).resume()
+            Coordinates = Latitude.count
+//            print("How many: \(Coordinates)\n,Lat_array: \(Latitude)\n, Lon_array: \(Longitude)")
+        }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

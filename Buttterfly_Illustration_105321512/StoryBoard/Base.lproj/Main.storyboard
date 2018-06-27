@@ -291,11 +291,11 @@
             <objects>
                 <viewController id="kuc-Pd-1eY" customClass="butterfly_DetailViewController" customModule="Buttterfly_Illustration_105321512" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pjx-tR-Os2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YNw-WZ-opN">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="836"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="nRS-kT-0bW" userLabel="Header View" customClass="ButterflyDetailHeaderView" customModule="Buttterfly_Illustration_105321512" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -417,6 +417,69 @@
                                             <outlet property="descriptionLabel" destination="1h5-Ga-s0C" id="7ac-cV-MDx"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ButterflyDetailSeparatorCell" id="YhM-Fd-Baz" customClass="ButterflyDetailSeparatorCell" customModule="Buttterfly_Illustration_105321512" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="466" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YhM-Fd-Baz" id="lWb-MY-eIk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Kgc-Fe-LDT">
+                                                    <rect key="frame" x="16" y="19.333333333333336" width="382" height="21.333333333333336"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subsection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p03-m3-NOQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KC-Xa-Jac" userLabel="Separator">
+                                                            <rect key="frame" x="0.0" y="20.333333333333332" width="378" height="1"/>
+                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="e2c-hY-5sO"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Kgc-Fe-LDT" secondAttribute="bottom" constant="3" id="7Zf-ua-3NG"/>
+                                                <constraint firstItem="Kgc-Fe-LDT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lWb-MY-eIk" secondAttribute="top" constant="11" id="Hlm-lZ-ZJU"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kgc-Fe-LDT" secondAttribute="trailing" constant="16" id="IHS-LD-Ewl"/>
+                                                <constraint firstItem="Kgc-Fe-LDT" firstAttribute="leading" secondItem="lWb-MY-eIk" secondAttribute="leading" constant="16" id="jGW-rA-vc1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="p03-m3-NOQ" id="eGa-ey-rIA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ButterflyDetailMapCell" rowHeight="215" id="Ww4-vy-RgK" customClass="ButterflyDetailMapCell" customModule="Buttterfly_Illustration_105321512" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="510" width="414" height="215"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ww4-vy-RgK" id="3Uq-5t-7Aa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="214.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxt-si-5HV">
+                                                    <rect key="frame" x="0.0" y="10" width="414" height="205"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="205" id="sMx-w5-g2D"/>
+                                                    </constraints>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fxt-si-5HV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3Uq-5t-7Aa" secondAttribute="top" constant="10" id="1oi-dX-5yD"/>
+                                                <constraint firstAttribute="bottom" secondItem="fxt-si-5HV" secondAttribute="bottom" id="7XG-P5-Qnf"/>
+                                                <constraint firstAttribute="trailing" secondItem="fxt-si-5HV" secondAttribute="trailing" id="tIE-1a-2qN"/>
+                                                <constraint firstItem="fxt-si-5HV" firstAttribute="leading" secondItem="3Uq-5t-7Aa" secondAttribute="leading" id="tXg-kS-hbA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mapView" destination="fxt-si-5HV" id="O3r-CM-LWB"/>
+                                            <segue destination="Hyx-g2-Csk" kind="show" identifier="showMap" id="00P-VZ-WJd"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="kuc-Pd-1eY" id="BW9-Nb-ivk"/>
@@ -433,13 +496,43 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="H4b-Vz-aJm"/>
                     </view>
+                    <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="headerView" destination="nRS-kT-0bW" id="Biw-VV-eyY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8Y-bJ-6bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2442" y="491"/>
+            <point key="canvasLocation" x="2126" y="492"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="9cA-2K-pfD">
+            <objects>
+                <viewController id="Hyx-g2-Csk" customClass="MapViewController" customModule="Buttterfly_Illustration_105321512" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PSG-dK-exM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LUh-UN-AME">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LUh-UN-AME" firstAttribute="bottom" secondItem="a3d-bo-GRZ" secondAttribute="bottom" id="EUs-hN-hQU"/>
+                            <constraint firstItem="LUh-UN-AME" firstAttribute="trailing" secondItem="a3d-bo-GRZ" secondAttribute="trailing" id="ULu-Rl-Pxs"/>
+                            <constraint firstItem="LUh-UN-AME" firstAttribute="leading" secondItem="a3d-bo-GRZ" secondAttribute="leading" id="iBG-LK-UL4"/>
+                            <constraint firstItem="LUh-UN-AME" firstAttribute="top" secondItem="PSG-dK-exM" secondAttribute="top" id="yXb-01-aut"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a3d-bo-GRZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="LUh-UN-AME" id="bMv-8P-dhi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dw0-hw-e3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2843" y="492"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qmv-I8-Qcd">
